@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background-image {
+  background-image: url(/images/arrrrrrrrrrrrrrrrrrrrr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+.background-image svg {
+  fill: #fff;
+  width: 200px;
+  height: 100px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: "Varela Round", sans-serif;
+}
+.center h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+  margin-top: 20px;
+}
+.center form {
+  padding: 0 40px;
+}
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #131111;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: 0.5s;
+}
+.txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #2691d9;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: #2691d9;
+}
+
+.pass {
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+  font-size: 18px;
+}
+.pass:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.buttons a:nth-child(1) {
+  background: blue;
+  width: 80px;
+  text-align: center;
+  border-radius: 8px;
+}
+.buttons a:nth-child(2) {
+  background: black;
+  width: 80px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+i {
+  color: white;
+}
+.buttons a:nth-child(3) {
+  color: #1da1f2;
+  background: rgb(7, 40, 34);
+  width: 80px;
+  text-align: center;
+  border-radius: 8px;
+}
+.buttons a:nth-child(4) {
+  background: green;
+  width: 80px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.buttons i {
+  font-size: 30px;
+  padding: 8px;
+}
+.logbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #d13639;
+  border-radius: 1.496333981744725rem;
+  padding: 10px;
+  margin-top: 140px;
+  cursor: pointer;
+}
+.logbtn i {
+  font-size: 60px;
+}
+@media screen and (max-width: 700px) {
+  .background-image svg {
+    width: 100px;
+  }
+  .center {
+    width: 400px;
+    height: 600px;
+  }
+  .buttons {
+    display: flex;
+    gap: 2rem;
+  }
+}
